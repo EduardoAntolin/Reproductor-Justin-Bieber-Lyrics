@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="260.532" Width="509.283">
     <Grid>
-        <Button x:Name="btnReproducir" Content="Reproducir" HorizontalAlignment="Left" Margin="207,173,0,0" VerticalAlignment="Top" Width="69" Height="23" Click="BtnReproducir_Click"/>
-        <TextBlock HorizontalAlignment="Left" Height="31" Margin="191,10,0,0" TextWrapping="Wrap" Text="Donald Trump rap" VerticalAlignment="Top" Width="117"/>
-        <TextBlock x:Name="Lyrics" HorizontalAlignment="Left" Margin="0,57,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="163" Width="501" Visibility="Hidden"/>
-        <ProgressBar x:Name="Pb" HorizontalAlignment="Left" Height="22" Margin="21,15,0,0" VerticalAlignment="Top" Width="456" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="btnReproducir" Content="Reproducir" HorizontalAlignment="Left" Margin="191,186,0,0" VerticalAlignment="Top" Width="128" Height="34" Click="BtnReproducir_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="31" Margin="191,10,0,0" TextWrapping="Wrap" Text="   Donald Trump rap" VerticalAlignment="Top" Width="117"/>
+        <TextBlock x:Name="Lyrics" HorizontalAlignment="Left" Margin="116,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="99" Width="271" Visibility="Visible" FontSize="24" TextAlignment="Center"/>
+        <ProgressBar x:Name="Pb" HorizontalAlignment="Left" Height="22" Margin="24,34,0,0" VerticalAlignment="Top" Width="456" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
             <ProgressBar.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

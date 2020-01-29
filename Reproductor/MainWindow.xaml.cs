@@ -37,9 +37,44 @@ namespace Reproductor
 
         int i = 0;
 
-        int[] Tiempo = { 4000, 50000, 6000, 7000, 8000,9000, 10000,11000 };
-        string[] Letra = {"Yo tengo mi bases","en todo los paises","si tiro una bomba","no creo que avise",
-                            "esto es blanco o negro","yo no veo grises","si no exploto todo" }; 
+        int[] Tiempo = { 4000, 5500, 6000, 7000, 8000, 9250, 10000, 11000, 12000, 13000, 14000, 16000, 17000, 18000, 19000, 21000, 23000, 23900, 26000, 29000, 30000, 31000, 34000, 35000, 37000, 39000, 41000, 42000, 43000, 45000, 46000, 49000, 50000, 52000, 53000, 54000, 59000  };
+        string[] Letra = {"Yo tengo mis bases",
+                          "en todos los países",
+                          "si tiro una bomba",
+                          "no creo que avise",
+                          "esto es blanco y negro",
+                          "yo no veo grises",
+                          "si no explotó todo",
+                          "fue por que no quise",
+                          "yo te dije",
+                          "hey, dont call me pato",
+                          "lo dijiste igual",
+                          "you know what?",
+                          "ahora desato",
+                          "una guerra mundial",
+                          "soy donald trump",
+                          "you better run",
+                          "si no hacen caso",
+                          "misilazo para Irán",
+                          "Soy donald trump",
+                          "you better run",
+                          "si no hacen caso",
+                          "misilazo para Irán",
+                          "si tiro una bomba",
+                          "no creo que avise",
+                          "Si no explotó todo",
+                          "fue porque no quise",
+                          "yo no soy pato", 
+                          "yo no empato",
+                          "yo la gano",
+                          "me dan un rato",
+                          "después mato al koreano",
+                          "si me dicen pato",
+                          "les tiro un misilazo",
+                          "ok?",
+                          "pum misilazo, no me digan pato",
+                          "no tengo nombre de pato, me dicen pato pum lo mato, misilazo"
+                            };
 
         public MainWindow()
         {
@@ -63,7 +98,6 @@ namespace Reproductor
 
         private void BtnReproducir_Click(object sender, RoutedEventArgs e)
         {
-
             if (output != null && output.PlaybackState == PlaybackState.Paused)
             {
                 //Retomo reproduccion
@@ -75,8 +109,9 @@ namespace Reproductor
             {
                 Lyrics.Visibility = Visibility.Visible;
                 btnReproducir.Visibility = Visibility.Hidden;
+                Pb.Visibility = Visibility.Visible;
                 
-                    reader = new AudioFileReader(path + "/JustinBieber.mp3");
+                    reader = new AudioFileReader(path + "/DonaldTrump.mp3");
                     output = new WaveOut();
              
 
